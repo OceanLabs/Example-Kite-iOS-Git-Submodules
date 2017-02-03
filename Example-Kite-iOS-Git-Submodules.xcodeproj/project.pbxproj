@@ -12,7 +12,61 @@
 		2E8CA9FD1E44A660000E6FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8CA9FB1E44A660000E6FD2 /* Main.storyboard */; };
 		2E8CA9FF1E44A660000E6FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8CA9FE1E44A660000E6FD2 /* Assets.xcassets */; };
 		2E8CAA021E44A660000E6FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8CAA001E44A660000E6FD2 /* LaunchScreen.storyboard */; };
+		2E8CAA1C1E44A79F000E6FD2 /* KiteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8CAA191E44A78B000E6FD2 /* KiteSDK.framework */; };
+		2E8CAA1D1E44A79F000E6FD2 /* KiteSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8CAA191E44A78B000E6FD2 /* KiteSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E8CAA141E44A78B000E6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2EADD8651BE79D6D0051CD31;
+			remoteInfo = "KiteSDK-Demo";
+		};
+		2E8CAA161E44A78B000E6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E898CEA1CC518180041CCD8;
+			remoteInfo = "Kite-CI-Deploy";
+		};
+		2E8CAA181E44A78B000E6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E451DC81D9554B40080F1C1;
+			remoteInfo = KiteSDK;
+		};
+		2E8CAA1A1E44A78B000E6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD73BF89186215790009DE03;
+			remoteInfo = KitePrintSDKTests;
+		};
+		2E8CAA1E1E44A79F000E6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E451DC71D9554B40080F1C1;
+			remoteInfo = KiteSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E8CAA201E44A7A0000E6FD2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E8CAA1D1E44A79F000E6FD2 /* KiteSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E8CA9F41E44A660000E6FD2 /* Example-Kite-iOS-Git-Submodules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Kite-iOS-Git-Submodules.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +76,7 @@
 		2E8CA9FE1E44A660000E6FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8CAA011E44A660000E6FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E8CAA031E44A660000E6FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KitePrintSDK.xcodeproj; path = "iOS-Print-SDK/Kite-SDK/KitePrintSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8CAA1C1E44A79F000E6FD2 /* KiteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +94,7 @@
 		2E8CA9EB1E44A660000E6FD2 = {
 			isa = PBXGroup;
 			children = (
+				2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */,
 				2E8CA9F61E44A660000E6FD2 /* Example-Kite-iOS-Git-Submodules */,
 				2E8CA9F51E44A660000E6FD2 /* Products */,
 			);
@@ -64,6 +121,17 @@
 			path = "Example-Kite-iOS-Git-Submodules";
 			sourceTree = "<group>";
 		};
+		2E8CAA0D1E44A78A000E6FD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E8CAA151E44A78B000E6FD2 /* KiteSDK-Demo.app */,
+				2E8CAA171E44A78B000E6FD2 /* Kite-CI-Deploy.app */,
+				2E8CAA191E44A78B000E6FD2 /* KiteSDK.framework */,
+				2E8CAA1B1E44A78B000E6FD2 /* KitePrintSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +142,12 @@
 				2E8CA9F01E44A660000E6FD2 /* Sources */,
 				2E8CA9F11E44A660000E6FD2 /* Frameworks */,
 				2E8CA9F21E44A660000E6FD2 /* Resources */,
+				2E8CAA201E44A7A0000E6FD2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E8CAA1F1E44A79F000E6FD2 /* PBXTargetDependency */,
 			);
 			name = "Example-Kite-iOS-Git-Submodules";
 			productName = "Example-Kite-iOS-Git-Submodules";
@@ -112,12 +182,49 @@
 			mainGroup = 2E8CA9EB1E44A660000E6FD2;
 			productRefGroup = 2E8CA9F51E44A660000E6FD2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2E8CAA0D1E44A78A000E6FD2 /* Products */;
+					ProjectRef = 2E8CAA0C1E44A78A000E6FD2 /* KitePrintSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2E8CA9F31E44A660000E6FD2 /* Example-Kite-iOS-Git-Submodules */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2E8CAA151E44A78B000E6FD2 /* KiteSDK-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "KiteSDK-Demo.app";
+			remoteRef = 2E8CAA141E44A78B000E6FD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2E8CAA171E44A78B000E6FD2 /* Kite-CI-Deploy.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kite-CI-Deploy.app";
+			remoteRef = 2E8CAA161E44A78B000E6FD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2E8CAA191E44A78B000E6FD2 /* KiteSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KiteSDK.framework;
+			remoteRef = 2E8CAA181E44A78B000E6FD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2E8CAA1B1E44A78B000E6FD2 /* KitePrintSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KitePrintSDKTests.xctest;
+			remoteRef = 2E8CAA1A1E44A78B000E6FD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2E8CA9F21E44A660000E6FD2 /* Resources */ = {
@@ -143,6 +250,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E8CAA1F1E44A79F000E6FD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KiteSDK;
+			targetProxy = 2E8CAA1E1E44A79F000E6FD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2E8CA9FB1E44A660000E6FD2 /* Main.storyboard */ = {
@@ -302,6 +417,7 @@
 				2E8CAA081E44A660000E6FD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

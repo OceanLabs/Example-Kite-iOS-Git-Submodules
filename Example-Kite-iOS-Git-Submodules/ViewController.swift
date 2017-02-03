@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KiteSDK
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonAction(_ sender: UIButton) {
+        OLKitePrintSDK.setAPIKey("a45bf7f39523d31aa1ca4ecf64d422b4d810d9c4", with: .sandbox)
+        let kiteViewController = OLKiteViewController.init(assets: [])
+        present(kiteViewController!, animated: true, completion: nil)
+    }
 
 }
 
